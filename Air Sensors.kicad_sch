@@ -1013,7 +1013,7 @@
 			(uuid "347d621d-d06a-456c-8436-54db83e13fbf")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/7d370f93-0a3a-4229-8480-c7d167e20db4"
 					(reference "#PWR057")
 					(unit 1)
@@ -1113,7 +1113,7 @@
 			(uuid "d8084354-9a62-4618-a87f-430d3e802064")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/7d370f93-0a3a-4229-8480-c7d167e20db4"
 					(reference "U9")
 					(unit 1)
@@ -1192,7 +1192,7 @@
 			(uuid "dfcf7031-925e-4930-9165-b170afdba5ab")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/7d370f93-0a3a-4229-8480-c7d167e20db4"
 					(reference "#PWR059")
 					(unit 1)
@@ -1270,7 +1270,7 @@
 			(uuid "737818ea-10a5-4d0f-9d75-4fb6e352df34")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/7d370f93-0a3a-4229-8480-c7d167e20db4"
 					(reference "#PWR062")
 					(unit 1)
@@ -1301,7 +1301,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 69.85 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1312,7 +1312,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 67.0052 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1352,7 +1352,7 @@
 			(uuid "526bfcf4-ffe3-4515-9888-a52db541f925")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/7d370f93-0a3a-4229-8480-c7d167e20db4"
 					(reference "C23")
 					(unit 1)
@@ -1430,7 +1430,7 @@
 			(uuid "2f9d0f35-95c3-4ee8-bc13-c40368fae234")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/7d370f93-0a3a-4229-8480-c7d167e20db4"
 					(reference "#PWR060")
 					(unit 1)
@@ -1509,7 +1509,7 @@
 			(uuid "3579ddd4-4294-4a81-a47a-3c1f7c49ebf2")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/7d370f93-0a3a-4229-8480-c7d167e20db4"
 					(reference "#PWR061")
 					(unit 1)
@@ -1540,7 +1540,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 82.55 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1551,7 +1551,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 79.7052 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -1591,7 +1591,7 @@
 			(uuid "3e92d5df-03ce-4efe-9438-c8d8b7aae480")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/7d370f93-0a3a-4229-8480-c7d167e20db4"
 					(reference "C24")
 					(unit 1)

@@ -2397,6 +2397,17 @@
 		)
 		(uuid "45b3e178-1b4a-4aea-910c-b4338cb47d75")
 	)
+	(hierarchical_label "SPI2_MISO"
+		(shape input)
+		(at 105.41 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "479a9945-ec1e-4a91-8e1c-c3ebd936c708")
+	)
 	(hierarchical_label "LORA_BUSY"
 		(shape input)
 		(at 140.97 52.07 0)
@@ -2441,6 +2452,17 @@
 		)
 		(uuid "6306e1b2-703b-4943-9f7d-3e13daf7212d")
 	)
+	(hierarchical_label "SPI2_MOSI"
+		(shape output)
+		(at 105.41 57.15 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "64d813af-78fb-4a1a-924d-c7bfdef5275e")
+	)
 	(hierarchical_label "UART1_RX"
 		(shape input)
 		(at 140.97 85.09 0)
@@ -2451,17 +2473,6 @@
 			(justify left)
 		)
 		(uuid "68830439-7c7c-409d-b6e6-e86f585486d0")
-	)
-	(hierarchical_label "SPI2_MOSI"
-		(shape output)
-		(at 105.41 59.69 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6b539ed7-87f9-4eed-858f-6591f294070e")
 	)
 	(hierarchical_label "I2C_SDA"
 		(shape bidirectional)
@@ -2628,17 +2639,6 @@
 		)
 		(uuid "e88a8e57-5e07-4cc0-8f4a-a382df84d61f")
 	)
-	(hierarchical_label "SPI2_MISO"
-		(shape input)
-		(at 105.41 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f2e46cf0-c705-49b4-b648-d6464cb066d3")
-	)
 	(hierarchical_label "P_GOOD"
 		(shape input)
 		(at 140.97 54.61 0)
@@ -2742,7 +2742,7 @@
 			(uuid "3a6112e3-64ed-4e3f-8962-8e7eb70f0261")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "#PWR020")
 					(unit 1)
@@ -2820,7 +2820,7 @@
 			(uuid "a5ebf66d-c7d4-434c-add7-eb609a0fae3a")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "#PWR048")
 					(unit 1)
@@ -2902,7 +2902,7 @@
 			(uuid "d85a7b47-30b4-4671-a5cc-687a7aef9a5d")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "R19")
 					(unit 1)
@@ -2933,7 +2933,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 93.98 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2944,7 +2944,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 91.1352 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -2984,7 +2984,7 @@
 			(uuid "a532eee4-d5f4-4afa-9f83-29a9dc9a8485")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "C1")
 					(unit 1)
@@ -3062,7 +3062,7 @@
 			(uuid "96bd92e7-ae34-4975-9954-b33085a1c5e3")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "#PWR026")
 					(unit 1)
@@ -3261,7 +3261,7 @@
 			(uuid "3ae3cfb8-ad15-42a6-b888-7b6569bac0c7")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "U7")
 					(unit 1)
@@ -3343,7 +3343,7 @@
 			(uuid "370b8170-bf02-47ca-86f9-fb666a3ce8da")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "RST1")
 					(unit 1)
@@ -3425,7 +3425,7 @@
 			(uuid "9ac9ccf7-26e1-4ba8-a153-3294567c9c85")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "BOOT1")
 					(unit 1)
@@ -3507,7 +3507,7 @@
 			(uuid "c3ce6ccd-4980-4313-a328-90dd82da01a3")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "R20")
 					(unit 1)
@@ -3589,7 +3589,7 @@
 			(uuid "33e37d9a-c45c-4d5f-89d4-ed8457261923")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "C17")
 					(unit 1)
@@ -3620,7 +3620,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10u"
 			(at 81.28 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3631,7 +3631,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 78.4352 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -3671,7 +3671,7 @@
 			(uuid "83944071-66b5-4c1b-9c83-dda767c3db32")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "C2")
 					(unit 1)
@@ -3749,7 +3749,7 @@
 			(uuid "d47a8e6b-b4fc-44fa-9188-cc9c29a8e72b")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "#PWR030")
 					(unit 1)
@@ -3827,7 +3827,7 @@
 			(uuid "2bc076e5-9120-40a5-95da-ed57ffed9ba0")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "#PWR02")
 					(unit 1)
@@ -3909,7 +3909,7 @@
 			(uuid "26843322-b01f-42d3-8767-071e24cf2262")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "R10")
 					(unit 1)
@@ -3991,7 +3991,7 @@
 			(uuid "377223b0-0cb9-486b-b449-284a20c7bf5f")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "R12")
 					(unit 1)
@@ -4069,7 +4069,7 @@
 			(uuid "92318e31-c8a2-47d0-af03-c8393f7f2456")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "#PWR08")
 					(unit 1)
@@ -4147,7 +4147,7 @@
 			(uuid "87b3ef78-0a52-4f27-938f-78579ac2c59e")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "#PWR033")
 					(unit 1)
@@ -4225,7 +4225,7 @@
 			(uuid "d8186be0-12dd-465e-8712-44aa65d8f0e7")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/b95685e3-53f8-4d4b-b7ad-2a266b169b28"
 					(reference "#PWR046")
 					(unit 1)

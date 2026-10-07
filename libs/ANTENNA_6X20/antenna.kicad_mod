@@ -204,7 +204,7 @@
 		)
 	)
 	(sheetname "/")
-	(sheetfile "meshtastic-v0.kicad_sch")
+	(sheetfile "meshthingy.kicad_sch")
 	(attr smd)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_rect

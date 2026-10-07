@@ -1502,12 +1502,11 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N5819WS"
+		(symbol "Diode:1N4148WS"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
 				(hide yes)
 			)
 			(exclude_from_sim no)
@@ -1525,7 +1524,7 @@
 					)
 				)
 			)
-			(property "Value" "1N5819WS"
+			(property "Value" "1N4148WS"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1546,7 +1545,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+			(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1557,7 +1556,7 @@
 					)
 				)
 			)
-			(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+			(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1568,7 +1567,29 @@
 					)
 				)
 			)
-			(property "ki_keywords" "diode Schottky"
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1590,10 +1611,10 @@
 					)
 				)
 			)
-			(symbol "1N5819WS_0_1"
+			(symbol "1N4148WS_0_1"
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -1628,7 +1649,7 @@
 					)
 				)
 			)
-			(symbol "1N5819WS_1_1"
+			(symbol "1N4148WS_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2535,7 +2556,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "Meshtastic-easyedapro:LEVEL SWITCH TMHU26"
+			(property "Footprint" "TMHU-27:tmhu26"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2799,6 +2820,12 @@
 		(uuid "04e73e38-03b7-4ae3-958f-d1c6a670fd19")
 	)
 	(junction
+		(at 49.53 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13cbf611-c9f3-4de0-86fb-1c528f62515a")
+	)
+	(junction
 		(at 74.93 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2857,12 +2884,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4d9a842e-eeda-485f-9468-ba0beb6a4923")
-	)
-	(junction
-		(at 49.53 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5385a126-c933-4392-90e2-ee5bcbb3e706")
 	)
 	(junction
 		(at 127 63.5)
@@ -4262,7 +4283,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 82.55) (xy 236.22 81.28)
+			(xy 236.22 83.82) (xy 236.22 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4449,7 +4470,7 @@
 		(uuid "9ed98381-331a-4159-a06b-730f2121a610")
 	)
 	(hierarchical_label "SYS_EN"
-		(shape output)
+		(shape input)
 		(at 59.69 165.1 180)
 		(effects
 			(font
@@ -4550,7 +4571,7 @@
 			(uuid "c837092d-fb79-4e06-8fcf-3fdd9ee55ada")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR025")
 					(unit 1)
@@ -4627,7 +4648,7 @@
 			(uuid "92865b52-ab5c-47be-862f-5b56ec4d2ee2")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR018")
 					(unit 1)
@@ -4705,7 +4726,7 @@
 			(uuid "03676b1f-ee86-4884-a3ae-bf7eda798ef3")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR03")
 					(unit 1)
@@ -4787,7 +4808,7 @@
 			(uuid "534ad116-2b10-4fb4-a0cc-f9046fdb5f11")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R3")
 					(unit 1)
@@ -4864,7 +4885,7 @@
 			(uuid "6c63586e-eecd-465e-9d47-24e2195474e0")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR042")
 					(unit 1)
@@ -4941,9 +4962,111 @@
 			(uuid "73da40c2-e237-4e16-aab4-f6b40b2b7669")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148WS")
+		(at 85.09 142.24 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13eda173-b6ef-4813-a59c-378600ea7bca")
+		(property "Reference" "D4"
+			(at 85.09 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148WS"
+			(at 85.09 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 85.09 146.685 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
+			(at 85.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
+			(at 85.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 85.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "167874d9-2d02-49c2-8185-cf7a16cad8d8")
+		)
+		(pin "2"
+			(uuid "14e4fbf9-362b-43ff-9dde-aebda410b2b5")
+		)
+		(instances
+			(project "meshthingy"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -5023,7 +5146,7 @@
 			(uuid "2c839cbd-b6a6-43b1-8339-146b268cf68b")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R5")
 					(unit 1)
@@ -5100,7 +5223,7 @@
 			(uuid "5e71ee6c-3558-4bc8-a2fc-632129da7063")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR017")
 					(unit 1)
@@ -5182,7 +5305,7 @@
 			(uuid "023054d8-2b02-40c1-9c10-5ecccd47e517")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R18")
 					(unit 1)
@@ -5264,7 +5387,7 @@
 			(uuid "5f9acc28-7620-4591-bee2-10f9772f4a67")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "C8")
 					(unit 1)
@@ -5343,7 +5466,7 @@
 			(uuid "c51d4c5d-90c0-4736-9fd6-a53f734121aa")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "C4")
 					(unit 1)
@@ -5420,7 +5543,7 @@
 			(uuid "9547c825-b769-485f-8e23-76217418c68d")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR035")
 					(unit 1)
@@ -5497,7 +5620,7 @@
 			(uuid "e0007608-7fda-4354-99ee-f1517be92fe8")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR023")
 					(unit 1)
@@ -5575,7 +5698,7 @@
 			(uuid "2ba62ab6-248c-4028-889e-69edd0e867f2")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR05")
 					(unit 1)
@@ -5652,89 +5775,9 @@
 			(uuid "ee614028-0206-40d8-a19c-a5d861441808")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR038")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N5819WS")
-		(at 85.09 153.67 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5bab4a59-c90e-4498-873e-58175348cca7")
-		(property "Reference" "D8"
-			(at 84.7725 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N5819WS"
-			(at 84.7725 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 85.09 158.115 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
-			(at 85.09 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
-			(at 85.09 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e712ba9f-aed3-473b-8a80-63a29244db72")
-		)
-		(pin "2"
-			(uuid "9967bf0f-29a3-4a36-a2f2-ea928fe43f45")
-		)
-		(instances
-			(project "meshtastic-v0"
-				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
-					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -5812,7 +5855,7 @@
 			(uuid "0c23c2c1-e757-458f-b565-affe78a68402")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R9")
 					(unit 1)
@@ -5889,7 +5932,7 @@
 			(uuid "b1ef4420-f1ec-460e-be30-d90627df02ef")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR040")
 					(unit 1)
@@ -5966,7 +6009,7 @@
 			(uuid "d11449f3-cf1a-4113-bc37-3fd8f7374dd9")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR019")
 					(unit 1)
@@ -6043,9 +6086,90 @@
 			(uuid "fb792cab-d64e-48c2-9b2c-efbdfbac5306")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 49.53 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6a943e61-d094-40af-b277-12b0e49d530c")
+		(property "Reference" "C25"
+			(at 53.34 102.616 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u"
+			(at 53.34 105.156 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H"
+			(at 50.4952 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 49.53 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f0971ec9-94af-48a2-b027-136e96bff9df")
+		)
+		(pin "1"
+			(uuid "525258ac-f53b-45ee-a798-d3f521157102")
+		)
+		(instances
+			(project "meshthingy"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -6125,7 +6249,7 @@
 			(uuid "2e7b46fd-2ee8-4819-a219-2fc89213c24f")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R17")
 					(unit 1)
@@ -6207,7 +6331,7 @@
 			(uuid "1fd000ba-ad06-48ea-b656-58c32a205c63")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R15")
 					(unit 1)
@@ -6289,7 +6413,7 @@
 			(uuid "805a14da-9bb0-4ea2-b192-7d506ad42647")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "C5")
 					(unit 1)
@@ -6370,89 +6494,9 @@
 			(uuid "61355c63-45aa-4358-8548-472137123d06")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "C16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N5819WS")
-		(at 64.77 153.67 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8b18df48-6f1b-4fc9-b7c0-b3241ca0c3b3")
-		(property "Reference" "D7"
-			(at 65.0875 147.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N5819WS"
-			(at 65.0875 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 64.77 149.225 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
-			(at 64.77 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
-			(at 64.77 153.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0a7728d1-78bf-498d-a0b3-4efd15655b67")
-		)
-		(pin "2"
-			(uuid "51131bef-e001-43af-a177-66ec2466b65e")
-		)
-		(instances
-			(project "meshtastic-v0"
-				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
-					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -6532,7 +6576,7 @@
 			(uuid "50face19-ef1e-41db-ac23-047d6e28fc32")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R7")
 					(unit 1)
@@ -6563,7 +6607,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_PNP_BEC"
+		(property "Value" "MMBT3906"
 			(at 111.76 140.9701 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6639,7 +6683,7 @@
 			(uuid "9bc298c7-a0cd-4853-a2c4-bb1802d7523f")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "Q2")
 					(unit 1)
@@ -6721,7 +6765,7 @@
 			(uuid "d59b6dc3-3c06-4116-8d84-cb24fe74dfe1")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "C14")
 					(unit 1)
@@ -6803,9 +6847,111 @@
 			(uuid "31408a0b-b13f-4848-8476-db14a4cc1804")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148WS")
+		(at 85.09 153.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a02aa6bf-463f-40e3-9d3a-7fead4b07e3b")
+		(property "Reference" "D7"
+			(at 85.09 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148WS"
+			(at 85.09 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 85.09 158.115 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
+			(at 85.09 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
+			(at 85.09 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 85.09 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 85.09 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0168e796-87a1-4de8-8de6-1b87ea868870")
+		)
+		(pin "2"
+			(uuid "e5a26f55-e424-455b-b725-05d93fe64872")
+		)
+		(instances
+			(project "meshthingy"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -6834,7 +6980,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Q_NPN_BEC"
+		(property "Value" "MMBT3904"
 			(at 93.98 166.3699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6910,89 +7056,9 @@
 			(uuid "d6c9aedb-93bf-4a79-9758-3c167bc362bc")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N5819WS")
-		(at 64.77 142.24 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a68b545a-2d2c-43c6-82d4-846f0dff70e7")
-		(property "Reference" "D4"
-			(at 65.0875 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N5819WS"
-			(at 65.0875 138.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 64.77 137.795 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
-			(at 64.77 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
-			(at 64.77 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8c2c0538-8252-46b6-8cb5-1a55ada1e2e5")
-		)
-		(pin "2"
-			(uuid "b7e6280c-a790-4b93-8f6c-67baa5117f85")
-		)
-		(instances
-			(project "meshtastic-v0"
-				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -7072,7 +7138,7 @@
 			(uuid "6565ddbe-086b-40dd-a20b-f6c122b316e5")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R16")
 					(unit 1)
@@ -7200,7 +7266,7 @@
 			(uuid "509f31fd-c341-410d-83c6-b730c0cb5331")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "U6")
 					(unit 1)
@@ -7231,7 +7297,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Lever Switch TMHU26"
+		(property "Value" "TMHU26"
 			(at 241.3 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7339,7 +7405,7 @@
 			(uuid "1ca5f73b-20c7-415c-9ff8-1fa42db6df67")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "U5")
 					(unit 1)
@@ -7369,7 +7435,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "47k"
 			(at 97.79 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7419,7 +7485,7 @@
 			(uuid "be7561cb-a2a9-47b0-9bb4-7d33dbdf3df7")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R14")
 					(unit 1)
@@ -7497,7 +7563,7 @@
 			(uuid "884543c4-8938-4aab-a679-f83449002ebf")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR043")
 					(unit 1)
@@ -7574,7 +7640,7 @@
 			(uuid "8d17631d-fde0-4771-b083-01405b3b9d98")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR041")
 					(unit 1)
@@ -7656,9 +7722,111 @@
 			(uuid "a3167801-542f-4033-835f-7589d3457c5e")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148WS")
+		(at 64.77 153.67 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1175bbe-131b-4bc7-9614-9c0b8c48fef6")
+		(property "Reference" "D6"
+			(at 64.77 147.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148WS"
+			(at 64.77 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 64.77 149.225 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
+			(at 64.77 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
+			(at 64.77 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 64.77 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 64.77 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "859946d8-f1e5-4abd-bce1-a8c2c76e8fcf")
+		)
+		(pin "2"
+			(uuid "58d282c5-2ac3-44e0-8521-a58e08d4ec34")
+		)
+		(instances
+			(project "meshthingy"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -7736,7 +7904,7 @@
 			(uuid "6f6d1639-2d8f-4b0f-900d-86373ae43b38")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R8")
 					(unit 1)
@@ -7746,7 +7914,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 236.22 82.55 0)
+		(at 236.22 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7757,7 +7925,7 @@
 		(fields_autoplaced yes)
 		(uuid "d29825a4-8bad-4f55-8b77-25c738886c1c")
 		(property "Reference" "#PWR036"
-			(at 236.22 88.9 0)
+			(at 236.22 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7768,7 +7936,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 236.22 87.63 0)
+			(at 236.22 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7778,7 +7946,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 82.55 0)
+			(at 236.22 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7789,7 +7957,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 82.55 0)
+			(at 236.22 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7800,7 +7968,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 236.22 82.55 0)
+			(at 236.22 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7814,171 +7982,9 @@
 			(uuid "4c10328d-eae7-4a1b-85ab-b5081fa0ec88")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR036")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 49.53 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d48e1dce-b295-4d70-b556-d36d39b5a0f0")
-		(property "Reference" "C12"
-			(at 53.34 102.8699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22u"
-			(at 53.34 105.4099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 50.4952 107.95 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 49.53 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "7a008cfd-b118-4b78-9914-5f37f10e86ec")
-		)
-		(pin "1"
-			(uuid "89734452-93c7-4702-9c5c-31f51645b652")
-		)
-		(instances
-			(project "meshtastic-v0"
-				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
-					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N5819WS")
-		(at 85.09 142.24 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da46f22f-81d8-43e6-9a55-3cc0ba19794b")
-		(property "Reference" "D6"
-			(at 84.7725 135.89 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N5819WS"
-			(at 84.7725 138.43 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 85.09 146.685 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
-			(at 85.09 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
-			(at 85.09 142.24 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7ead55e6-6710-43e2-a2f6-135c98efa373")
-		)
-		(pin "2"
-			(uuid "bb62e7f1-8713-4564-be89-bf7d842e6e39")
-		)
-		(instances
-			(project "meshtastic-v0"
-				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
-					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -8054,7 +8060,7 @@
 			(uuid "5c370517-79ba-4b4a-8489-1680b7e42199")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR09")
 					(unit 1)
@@ -8132,7 +8138,7 @@
 			(uuid "1b2f3aae-5286-4577-8c78-16cf8cd7d9bf")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "#PWR037")
 					(unit 1)
@@ -8238,7 +8244,7 @@
 			(uuid "cd7910bf-0680-43c6-95ae-61a9b43c0403")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "U3")
 					(unit 1)
@@ -8320,7 +8326,7 @@
 			(uuid "a25f04c6-487d-4f4a-bd31-f8d24aeb9e44")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R4")
 					(unit 1)
@@ -8350,7 +8356,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8u"
+		(property "Value" "6.8uH"
 			(at 132.08 99.06 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8400,7 +8406,7 @@
 			(uuid "f10aebc1-4b06-4a1b-ba22-46875d75ccd4")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "L2")
 					(unit 1)
@@ -8431,7 +8437,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "47k"
 			(at 64.77 69.8499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8482,7 +8488,7 @@
 			(uuid "4bf6e91b-5f50-4efa-a408-315862fc9a33")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "R6")
 					(unit 1)
@@ -8564,7 +8570,7 @@
 			(uuid "5aa9d8ef-6c58-4ebf-b3ad-5c9853ea60e4")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "C3")
 					(unit 1)
@@ -8646,9 +8652,111 @@
 			(uuid "0f36a009-7dfe-4cbd-a192-dc2a0b3f1643")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148WS")
+		(at 64.77 142.24 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fc346fe0-8c35-4445-8229-b6d4395d448e")
+		(property "Reference" "D3"
+			(at 64.77 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148WS"
+			(at 64.77 138.43 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 64.77 137.795 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf"
+			(at 64.77 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "75V 0.15A Fast switching Diode, SOD-323"
+			(at 64.77 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 64.77 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 64.77 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7d037b5d-e7af-4649-904a-0be87cc1431b")
+		)
+		(pin "2"
+			(uuid "9645a4d2-cbb9-47a4-8aeb-1b6906ed8f5e")
+		)
+		(instances
+			(project "meshthingy"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/72217bd0-b91f-4cb3-841b-9b2445ca4539"
+					(reference "D3")
 					(unit 1)
 				)
 			)

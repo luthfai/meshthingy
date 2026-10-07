@@ -823,25 +823,25 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "LS1"
-				(at 6.35 2.5401 0)
+				(at -3.81 2.5401 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify right)
 				)
 			)
-			(property "Value" "SMT-0927-S-14-R"
-				(at 6.35 0.0001 0)
+			(property "Value" "Buzzer 8.5x8.5x3"
+				(at 22.86 0.254 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
+					(justify right)
 				)
 			)
 			(property "Footprint" "SMT_0927_S_14_R:XDCR_SMT-0927-S-14-R"
@@ -1038,8 +1038,9 @@
 			)
 			(symbol "SMT-0927-S-14-R_1_1"
 				(pin no_connect line
-					(at 7.62 -2.54 180)
+					(at 5.08 -5.08 90)
 					(length 2.54)
+					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -1056,8 +1057,9 @@
 					)
 				)
 				(pin no_connect line
-					(at 7.62 5.08 180)
+					(at 5.08 7.62 270)
 					(length 2.54)
+					(hide yes)
 					(name "NC"
 						(effects
 							(font
@@ -2079,16 +2081,6 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 85.09) (xy 172.72 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61b40044-b0ba-4622-b600-2a690080e03d")
-	)
-	(wire
-		(pts
 			(xy 140.97 138.43) (xy 144.78 138.43)
 		)
 		(stroke
@@ -2129,6 +2121,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 85.09) (xy 172.72 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76424ee4-7943-4f24-a003-e8399419aff8")
+	)
+	(wire
+		(pts
 			(xy 139.7 135.89) (xy 139.7 143.51)
 		)
 		(stroke
@@ -2146,16 +2148,6 @@
 			(type default)
 		)
 		(uuid "7c76e501-1cda-4309-a43c-a66090efd62a")
-	)
-	(wire
-		(pts
-			(xy 132.08 128.27) (xy 144.78 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "803c143c-20ea-4a70-b7ae-ee7ba4309ccc")
 	)
 	(wire
 		(pts
@@ -2427,17 +2419,6 @@
 		)
 		(uuid "ffa83743-6c50-4f3b-9762-f6fbdfda0360")
 	)
-	(hierarchical_label "SPI_CS_N"
-		(shape input)
-		(at 132.08 128.27 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1f39fa1e-a1ea-41fe-b2b0-f9cef75de777")
-	)
 	(hierarchical_label "IO47"
 		(shape bidirectional)
 		(at 129.54 102.87 180)
@@ -2619,7 +2600,7 @@
 			(uuid "e7d05280-dc1e-4bc7-8f55-4b6e5d607361")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "SDA1")
 					(unit 1)
@@ -2650,7 +2631,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
+		(property "Value" "Vib_Motor_Conn"
 			(at 53.34 68.5799 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2701,7 +2682,7 @@
 			(uuid "4fa84873-276e-4054-aae4-4ae2c5733f6d")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "JP1")
 					(unit 1)
@@ -2780,7 +2761,7 @@
 			(uuid "181af6d5-9827-4eac-a7a7-dc046446116b")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR022")
 					(unit 1)
@@ -2858,7 +2839,7 @@
 			(uuid "4aefa674-2282-449e-9237-19339e2d87f0")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR064")
 					(unit 1)
@@ -2937,7 +2918,7 @@
 			(uuid "8e67d184-1b55-49fd-aae8-163e8e59dfb4")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR066")
 					(unit 1)
@@ -3016,7 +2997,7 @@
 			(uuid "3b34b5fb-37f6-4be5-8194-0481d950cf81")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "VS1")
 					(unit 1)
@@ -3095,7 +3076,7 @@
 			(uuid "0729761c-e083-42f6-87ae-e122a012f918")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "MISO1")
 					(unit 1)
@@ -3183,7 +3164,7 @@
 			(uuid "bbefa746-626a-4ccc-afb5-3ca463cbffd4")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "Q1")
 					(unit 1)
@@ -3261,9 +3242,90 @@
 			(uuid "0ee65cd8-91ff-4acf-8911-b7126a9dd772")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 172.72 81.28 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5a0c81f5-0eb6-4954-b7b6-73f22e2b6e17")
+		(property "Reference" "R22"
+			(at 174.244 80.264 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1k"
+			(at 174.244 82.804 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 174.498 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 172.72 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3995a879-3afb-4efd-8a32-0a4b4687bb81")
+		)
+		(pin "2"
+			(uuid "43cc5a1a-a618-4716-abe2-f22ca0521509")
+		)
+		(instances
+			(project "meshthingy"
+				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
+					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -3340,7 +3402,7 @@
 			(uuid "39f45916-bdf3-479f-84fa-4bed7921adcf")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "CLK1")
 					(unit 1)
@@ -3419,7 +3481,7 @@
 			(uuid "f126ac08-941b-433b-aae8-2b5802ab3798")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "G2")
 					(unit 1)
@@ -3500,7 +3562,7 @@
 			(uuid "d9f61881-9553-4113-91fa-c4168e81e289")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "R23")
 					(unit 1)
@@ -3579,7 +3641,7 @@
 			(uuid "24f6289f-7fd8-4463-a6c4-87fa3c5cd0bf")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "G1")
 					(unit 1)
@@ -3657,90 +3719,9 @@
 			(uuid "8dea3610-ba45-4a73-af84-d82a42a5553d")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 172.72 90.17 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "86578eaa-1289-49d5-bf9a-64faf8c6ede6")
-		(property "Reference" "R22"
-			(at 174.244 89.154 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1k"
-			(at 174.244 91.694 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 174.498 90.17 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 172.72 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 172.72 90.17 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9bf55b7a-7cd2-43b8-bff0-adc996ab4638")
-		)
-		(pin "2"
-			(uuid "2f13a1a5-0ef6-48d9-b86f-0f95ae63d918")
-		)
-		(instances
-			(project "meshtastic-v0"
-				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -3819,7 +3800,7 @@
 			(uuid "a420f5c9-3c00-49f6-a0d9-d49ad6b7189e")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "D5")
 					(unit 1)
@@ -3897,7 +3878,7 @@
 			(uuid "73e011ad-fd5e-4c83-942b-f6376d906aef")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR021")
 					(unit 1)
@@ -3978,7 +3959,7 @@
 			(uuid "a1d07de2-f235-4ead-92c3-e769aadd0822")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "D9")
 					(unit 1)
@@ -4059,7 +4040,7 @@
 			(uuid "3f0ab12f-4dca-44c4-92ba-fd22c911f641")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "R11")
 					(unit 1)
@@ -4137,7 +4118,7 @@
 			(uuid "bda4c6f9-3841-4074-b080-725c75ad0e2a")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR056")
 					(unit 1)
@@ -4155,28 +4136,27 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d67fc7dc-ebfb-4758-ad35-db4990ff5b2b")
 		(property "Reference" "LS1"
-			(at 107.95 66.0399 0)
+			(at 111.506 65.532 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "SMT-0927-S-14-R"
-			(at 107.95 68.5799 0)
+		(property "Value" "Buzzer 8.5x8.5x3"
+			(at 124.46 68.326 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "SMT_0927_S_14_R:XDCR_SMT-0927-S-14-R"
@@ -4286,88 +4266,9 @@
 			(uuid "70a6c0a3-9c56-4a28-9fb1-59df571e071d")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "LS1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 144.78 128.27 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dabaf55f-d531-49b3-b4b0-60085ac44ab0")
-		(property "Reference" "CSN1"
-			(at 149.86 126.9999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "CSN"
-			(at 149.86 129.5399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
-			(at 144.78 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 144.78 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "af9b56d2-4d9c-48f1-a8ea-b277f86a77e8")
-		)
-		(instances
-			(project "meshtastic-v0"
-				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
-					(reference "CSN1")
 					(unit 1)
 				)
 			)
@@ -4444,7 +4345,7 @@
 			(uuid "2adf5e8f-5e92-4d62-931f-e841cdf86054")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "SLC1")
 					(unit 1)
@@ -4454,7 +4355,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 172.72 81.28 270)
+		(at 172.72 90.17 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4465,29 +4366,29 @@
 		(fields_autoplaced yes)
 		(uuid "e4c1d027-8ebb-43d2-8db7-8143a0ab7f48")
 		(property "Reference" "D2"
-			(at 175.26 78.4224 90)
+			(at 176.53 90.4874 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "LED"
-			(at 175.26 80.9624 90)
+			(at 176.53 93.0274 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 172.72 81.28 0)
+			(at 172.72 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4498,7 +4399,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 81.28 0)
+			(at 172.72 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4509,7 +4410,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 172.72 81.28 0)
+			(at 172.72 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4520,7 +4421,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 172.72 81.28 0)
+			(at 172.72 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4537,7 +4438,7 @@
 			(uuid "3cb24857-b573-4fb8-8393-7dc9d91b922e")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "D2")
 					(unit 1)
@@ -4616,7 +4517,7 @@
 			(uuid "8c532840-3fa1-4347-b3a2-b6cd193b712d")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "MOSI1")
 					(unit 1)
@@ -4695,7 +4596,7 @@
 			(uuid "308bd3a8-bb98-4ff2-9402-c5195bc8a8d4")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "IO07")
 					(unit 1)
@@ -4783,7 +4684,7 @@
 			(uuid "7a5b675e-5d53-4b1d-8e00-38a275177443")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "Q4")
 					(unit 1)
@@ -4861,7 +4762,7 @@
 			(uuid "65fa1ed8-da42-4ded-b085-10a64aabe968")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "#PWR063")
 					(unit 1)
@@ -4940,7 +4841,7 @@
 			(uuid "dfafe32d-bb4c-481a-95b4-9d613c237a00")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "3V3")
 					(unit 1)
@@ -5019,7 +4920,7 @@
 			(uuid "e7718dd6-dcdb-442f-aa7b-943a91e804d1")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/159c1940-45ee-4eb6-b2c7-3caab0dbb038"
 					(reference "IO47")
 					(unit 1)

@@ -1224,7 +1224,7 @@
 		(uuid "fa2fe6bf-f3c0-4bf4-a4d9-10a21cb2c647")
 	)
 	(hierarchical_label "LORA_RST"
-		(shape output)
+		(shape input)
 		(at 120.65 81.28 180)
 		(effects
 			(font
@@ -1235,7 +1235,7 @@
 		(uuid "17cd5a03-4a59-408f-881a-545bf7472f55")
 	)
 	(hierarchical_label "SPI2_CLK"
-		(shape output)
+		(shape input)
 		(at 120.65 73.66 180)
 		(effects
 			(font
@@ -1246,18 +1246,18 @@
 		(uuid "1ed8d572-10ce-49cc-8850-f59559d02166")
 	)
 	(hierarchical_label "SPI2_MOSI"
-		(shape output)
-		(at 120.65 71.12 180)
+		(shape input)
+		(at 120.65 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "2bde6aca-2609-49ad-97a3-1ea5b957580d")
+		(uuid "2c086494-bf41-4d99-a244-8ffd1b83d7bd")
 	)
 	(hierarchical_label "LORA_INT"
-		(shape input)
+		(shape output)
 		(at 146.05 71.12 0)
 		(effects
 			(font
@@ -1268,18 +1268,18 @@
 		(uuid "31b5d277-205a-42ea-825c-9c355f65416f")
 	)
 	(hierarchical_label "SPI2_MISO"
-		(shape input)
-		(at 120.65 68.58 180)
+		(shape output)
+		(at 120.65 71.12 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3f982a9d-64b5-498e-97bf-9295c4349512")
+		(uuid "62cf0f56-df16-4e4f-abd4-17a9224ab93b")
 	)
 	(hierarchical_label "SPI2_CS_N"
-		(shape output)
+		(shape input)
 		(at 120.65 76.2 180)
 		(effects
 			(font
@@ -1290,7 +1290,7 @@
 		(uuid "8dd1e0f0-e93d-4932-8362-59bed5799903")
 	)
 	(hierarchical_label "LORA_BUSY"
-		(shape input)
+		(shape output)
 		(at 146.05 78.74 0)
 		(effects
 			(font
@@ -1370,7 +1370,7 @@
 			(uuid "39f51250-1758-4520-bf67-b71e2a9e033c")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1da3b465-1dc6-40ce-817b-2e6fcc10ae59"
 					(reference "#PWR06")
 					(unit 1)
@@ -1448,7 +1448,7 @@
 			(uuid "cb0f6293-fb95-45c2-ac30-93755bc896ae")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1da3b465-1dc6-40ce-817b-2e6fcc10ae59"
 					(reference "#PWR051")
 					(unit 1)
@@ -1479,7 +1479,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10u"
 			(at 97.79 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1490,7 +1490,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 94.9452 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1530,7 +1530,7 @@
 			(uuid "e00162f4-cdab-4d4b-983c-50fab0df5db5")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1da3b465-1dc6-40ce-817b-2e6fcc10ae59"
 					(reference "C9")
 					(unit 1)
@@ -1609,7 +1609,7 @@
 			(uuid "7dc184c1-7500-497c-8738-e054564377a8")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1da3b465-1dc6-40ce-817b-2e6fcc10ae59"
 					(reference "#PWR031")
 					(unit 1)
@@ -1733,7 +1733,7 @@
 			(uuid "a8b66007-1a43-426e-ad9d-5809037cb544")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1da3b465-1dc6-40ce-817b-2e6fcc10ae59"
 					(reference "U4")
 					(unit 1)
@@ -1764,7 +1764,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "100n"
 			(at 110.49 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1775,7 +1775,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 107.6452 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -1815,7 +1815,7 @@
 			(uuid "0f42e3aa-4148-43a8-a450-0ad96adca9d5")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1da3b465-1dc6-40ce-817b-2e6fcc10ae59"
 					(reference "C10")
 					(unit 1)
@@ -1846,7 +1846,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "SMA_Con"
 			(at 166.37 65.0631 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1897,7 +1897,7 @@
 			(uuid "833d9922-c351-4ce4-a715-b5045039b923")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1da3b465-1dc6-40ce-817b-2e6fcc10ae59"
 					(reference "J4")
 					(unit 1)
@@ -1975,7 +1975,7 @@
 			(uuid "58cb7b17-d0b2-4e6e-bf61-4dc774035572")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1da3b465-1dc6-40ce-817b-2e6fcc10ae59"
 					(reference "#PWR04")
 					(unit 1)

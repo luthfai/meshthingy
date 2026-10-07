@@ -1432,7 +1432,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02_Pin"
+		(property "Value" "BATT_Con"
 			(at 39.37 77.978 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1482,7 +1482,7 @@
 			(uuid "cb2dae01-cad9-4017-b7a6-ff2d1e514988")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/2c15135a-b809-49e8-b858-375c97ce8d4a"
 					(reference "J2")
 					(unit 1)
@@ -1560,7 +1560,7 @@
 			(uuid "244169a3-d0cf-4cda-a1cb-71b5ae7da3e7")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/2c15135a-b809-49e8-b858-375c97ce8d4a"
 					(reference "#PWR032")
 					(unit 1)
@@ -1642,7 +1642,7 @@
 			(uuid "4a034ba4-143d-44a8-bada-caf7de3f7485")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/2c15135a-b809-49e8-b858-375c97ce8d4a"
 					(reference "R1")
 					(unit 1)
@@ -1720,7 +1720,7 @@
 			(uuid "2d0d7c1c-8f58-4d8e-bc05-28a5431f4971")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/2c15135a-b809-49e8-b858-375c97ce8d4a"
 					(reference "#PWR010")
 					(unit 1)
@@ -1798,7 +1798,7 @@
 			(uuid "fc9ae36f-98d5-4d3e-a422-489ebafd7fdc")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/2c15135a-b809-49e8-b858-375c97ce8d4a"
 					(reference "#PWR013")
 					(unit 1)
@@ -1828,7 +1828,7 @@
 				)
 			)
 		)
-		(property "Value" "USB_C_Receptacle_USB2.0_16P"
+		(property "Value" "USB_C_16P"
 			(at 33.02 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1923,7 +1923,7 @@
 			(uuid "c292d756-4fea-4d0d-ba68-c288d538c343")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/2c15135a-b809-49e8-b858-375c97ce8d4a"
 					(reference "J1")
 					(unit 1)
@@ -2005,7 +2005,7 @@
 			(uuid "039f5400-ecc8-4943-937d-2029e3e13589")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/2c15135a-b809-49e8-b858-375c97ce8d4a"
 					(reference "R2")
 					(unit 1)

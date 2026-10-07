@@ -303,12 +303,6 @@
 		(uuid "64064a83-b1f9-4c3a-b74a-7bd31882dbb5")
 	)
 	(junction
-		(at 273.05 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "862e380b-5d84-4fb6-8b73-828008c40867")
-	)
-	(junction
 		(at 189.23 182.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -494,16 +488,6 @@
 	)
 	(wire
 		(pts
-			(xy 273.05 185.42) (xy 273.05 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4fca567b-d038-43aa-bd64-513d62bcf904")
-	)
-	(wire
-		(pts
 			(xy 106.68 125.73) (xy 119.38 125.73)
 		)
 		(stroke
@@ -684,7 +668,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 134.62) (xy 273.05 134.62)
+			(xy 266.7 134.62) (xy 276.86 134.62)
 		)
 		(stroke
 			(width 0)
@@ -771,16 +755,6 @@
 			(type default)
 		)
 		(uuid "ae698cd1-1cbd-4eb3-9c63-96f7eff51d55")
-	)
-	(wire
-		(pts
-			(xy 273.05 134.62) (xy 276.86 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af05746d-f0f2-4ea1-aa9b-3085fad73598")
 	)
 	(wire
 		(pts
@@ -964,16 +938,6 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 185.42) (xy 273.05 185.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f59660a8-38a9-48c0-8e71-98e6f5d3a53d")
-	)
-	(wire
-		(pts
 			(xy 106.68 128.27) (xy 119.38 128.27)
 		)
 		(stroke
@@ -1052,7 +1016,7 @@
 			(uuid "8f16aeeb-1a44-45d3-918b-bba04500ec7b")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(reference "#PWR065")
 					(unit 1)
@@ -1130,7 +1094,7 @@
 			(uuid "ce622953-0165-4fb8-a2f6-116b82231ea9")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(reference "#PWR012")
 					(unit 1)
@@ -1216,36 +1180,6 @@
 				(justify left)
 			)
 		)
-		(pin "SPI_CS_N" input
-			(at 276.86 185.42 180)
-			(uuid "551d9423-3a4c-42a0-a0cc-bd2aace2c8c6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SPI_MOSI" input
-			(at 276.86 177.8 180)
-			(uuid "e23e0cb7-f50e-4ce5-87c8-2f917680abaa")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SPI_MISO" output
-			(at 276.86 180.34 180)
-			(uuid "678259dd-8c25-4b9d-9c6a-212deff6f961")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "STATUS_LED" input
 			(at 276.86 195.58 180)
 			(uuid "fb6fba75-ce14-4087-8d82-57ef8c9a0b29")
@@ -1286,8 +1220,28 @@
 				(justify left)
 			)
 		)
+		(pin "SPI_MISO" output
+			(at 276.86 180.34 180)
+			(uuid "87ed1dad-9c7d-438a-b779-1d8181431686")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_MOSI" input
+			(at 276.86 177.8 180)
+			(uuid "e909ae7b-9b06-4afb-8408-c30a044afaa9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(page "10")
 				)
@@ -1332,7 +1286,7 @@
 				(justify left top)
 			)
 		)
-		(pin "LORA_BUSY" input
+		(pin "LORA_BUSY" output
 			(at 276.86 143.51 180)
 			(uuid "0590a2f5-f644-4888-8677-2950865b1247")
 			(effects
@@ -1342,7 +1296,7 @@
 				(justify left)
 			)
 		)
-		(pin "LORA_INT" input
+		(pin "LORA_INT" output
 			(at 276.86 151.13 180)
 			(uuid "6ac9149a-9989-4e93-a274-665a94c0ccd4")
 			(effects
@@ -1352,17 +1306,7 @@
 				(justify left)
 			)
 		)
-		(pin "SPI2_MISO" input
-			(at 276.86 129.54 180)
-			(uuid "54967405-8207-4bd9-b822-fd8039171c88")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LORA_RST" output
+		(pin "LORA_RST" input
 			(at 276.86 140.97 180)
 			(uuid "140c408c-e8cb-4762-bd29-b9f3d5df3392")
 			(effects
@@ -1372,7 +1316,7 @@
 				(justify left)
 			)
 		)
-		(pin "SPI2_CLK" output
+		(pin "SPI2_CLK" input
 			(at 276.86 132.08 180)
 			(uuid "278869d7-bf01-4c6a-b20f-5db3335d363c")
 			(effects
@@ -1382,7 +1326,7 @@
 				(justify left)
 			)
 		)
-		(pin "SPI2_CS_N" output
+		(pin "SPI2_CS_N" input
 			(at 276.86 134.62 180)
 			(uuid "84828a03-20c1-434d-852d-c8291cb96bcf")
 			(effects
@@ -1392,9 +1336,19 @@
 				(justify left)
 			)
 		)
-		(pin "SPI2_MOSI" output
+		(pin "SPI2_MISO" output
+			(at 276.86 129.54 180)
+			(uuid "d6b6a524-f3ca-4193-9b20-b32dbe3692ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI2_MOSI" input
 			(at 276.86 127 180)
-			(uuid "2d62f163-0020-4b5f-a213-63b152463289")
+			(uuid "2b802439-3fe8-4718-bfa2-fe32ee3cedbd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,7 +1357,7 @@
 			)
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(page "7")
 				)
@@ -1469,7 +1423,7 @@
 			)
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(page "5")
 				)
@@ -1555,7 +1509,7 @@
 			)
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(page "4")
 				)
@@ -1651,7 +1605,7 @@
 			)
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(page "6")
 				)
@@ -1727,7 +1681,7 @@
 			)
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(page "8")
 				)
@@ -1832,7 +1786,7 @@
 				(justify right)
 			)
 		)
-		(pin "SYS_EN" output
+		(pin "SYS_EN" input
 			(at 184.15 106.68 0)
 			(uuid "7b1b439c-1bb9-4cff-bef5-1f6413c2a333")
 			(effects
@@ -1883,7 +1837,7 @@
 			)
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(page "2")
 				)
@@ -1949,7 +1903,7 @@
 			)
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(page "9")
 				)
@@ -2114,16 +2068,6 @@
 				(justify left)
 			)
 		)
-		(pin "SPI2_MISO" input
-			(at 266.7 129.54 0)
-			(uuid "52c29d6c-782d-4a9d-a39f-4d94e0de2013")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "UART1_RX" input
 			(at 266.7 100.33 0)
 			(uuid "0988b646-fc0b-44b3-9ce9-5ce14b991035")
@@ -2204,16 +2148,6 @@
 				(justify right)
 			)
 		)
-		(pin "SPI2_MOSI" output
-			(at 266.7 127 0)
-			(uuid "dc74350f-dedc-49a3-882f-29e3972ce3fc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "STATUS_LED" output
 			(at 266.7 195.58 0)
 			(uuid "7fff115f-1935-4431-a3c2-83cb6e3e19ab")
@@ -2284,8 +2218,28 @@
 				(justify right)
 			)
 		)
+		(pin "SPI2_MISO" input
+			(at 266.7 129.54 0)
+			(uuid "89036d8d-ba0e-498a-a618-42eb779874bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SPI2_MOSI" output
+			(at 266.7 127 0)
+			(uuid "110c9078-db19-4b99-90bb-f04f0ce2d376")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514"
 					(page "3")
 				)

@@ -63,8 +63,8 @@
           "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
-          "pad_connection": 1,
-          "remove_islands": 0,
+          "pad_connection": 2,
+          "remove_islands": 1,
           "thermal_relief_gap": 0.25,
           "thermal_relief_spoke_width": 0.5
         }
@@ -76,7 +76,48 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|114150000|72550000|c46a2338-f430-4a39-a3a0-4e431a834686|c5e9aa8b-f5f2-4f4b-b6da-13e0fec65587",
+          ""
+        ],
+        [
+          "clearance|114150000|74487931|c46a2338-f430-4a39-a3a0-4e431a834686|e7f6a91c-d4b9-495a-8043-7a670f581785",
+          ""
+        ],
+        [
+          "clearance|114150000|80350000|09287f9f-85c9-4564-9d99-5658230dda73|c46a2338-f430-4a39-a3a0-4e431a834686",
+          ""
+        ],
+        [
+          "clearance|114350000|78350000|4b6f528c-a138-4184-b021-d53a3edc85d6|c46a2338-f430-4a39-a3a0-4e431a834686",
+          ""
+        ],
+        [
+          "clearance|114350000|79200000|b86b5eb1-90b5-43d2-b046-7778a4f5ed56|c46a2338-f430-4a39-a3a0-4e431a834686",
+          ""
+        ],
+        [
+          "clearance|115150000|78281034|972a700a-25af-4b58-bb37-57db81d0937a|c46a2338-f430-4a39-a3a0-4e431a834686",
+          ""
+        ],
+        [
+          "clearance|115150000|79200000|621d547d-410d-43d5-83eb-80354a49ee40|c46a2338-f430-4a39-a3a0-4e431a834686",
+          ""
+        ],
+        [
+          "clearance|122650000|70350000|40283a6e-320d-4e8d-8c16-3f0fd1e65bcd|c46a2338-f430-4a39-a3a0-4e431a834686",
+          ""
+        ],
+        [
+          "clearance|122975000|74832759|88ea12f6-2947-4b00-a40a-38d0839827bb|c46a2338-f430-4a39-a3a0-4e431a834686",
+          ""
+        ],
+        [
+          "clearance|124150000|72763793|7fb72f55-16a5-4093-b032-5b9f9c0cd2bc|c46a2338-f430-4a39-a3a0-4e431a834686",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -512,7 +553,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "meshtastic-v0.kicad_pro",
+    "filename": "meshthingy.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -548,7 +589,7 @@
     "last_paths": {
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "gerbers/",
       "specctra_dsn": "",
       "step": "",
       "vrml": ""
@@ -623,12 +664,144 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Contributor",
+          "name": "Contributor",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Origin Footprint",
+          "name": "Origin Footprint",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Purchase-URL",
+          "name": "Purchase-URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "spicePre",
+          "name": "spicePre",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "spiceSymbolName",
+          "name": "spiceSymbolName",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -668,12 +841,12 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "meshtastic-v0.kicad_sch",
+        "filename": "meshthingy.kicad_sch",
         "name": "Root",
         "uuid": "e4d6fcd6-7415-4955-88fd-f0e430797514"
       }
     ],
-    "used_designators": "VS1,IC1,MISO1,C1-24,U1-11,SW1-4,G1-2,E1,RST1,TP12-23,TP26,#PWR1-67,D1-9,JP1-4,J1-5,LS1-2,CSN1,L1-2,BOOT1,SDA1,SLC1,AE1,CLK1,BZ1,R1-23,Q1-4,MOSI1",
+    "used_designators": "J1-5,MOSI1,SDA1,D1-9,U1-11,C1-25,G1-2,LS1-2,RST1,#PWR1-68,JP1-4,TP12-23,TP26,VS1,CLK1,AE1,SW1-4,MISO1,IC1,E1,L1-2,BOOT1,R1-24,SLC1,CSN1,BZ1,Q1-4",
     "variants": []
   },
   "sheets": [

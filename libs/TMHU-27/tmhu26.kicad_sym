@@ -30,7 +30,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Meshtastic-easyedapro:LEVEL SWITCH TMHU26"
+		(property "Footprint" "TMHU-27:tmhu26"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)

@@ -1050,7 +1050,7 @@
 			(uuid "1256e274-d252-4d7c-914c-fac618c5a66f")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1f9f1566-46fa-44c7-a790-92c5c27114cc"
 					(reference "JP3")
 					(unit 1)
@@ -1128,7 +1128,7 @@
 			(uuid "b045312a-88d4-4e9e-adf7-3dbbeb68d9e2")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1f9f1566-46fa-44c7-a790-92c5c27114cc"
 					(reference "#PWR045")
 					(unit 1)
@@ -1206,7 +1206,7 @@
 			(uuid "8603cf2f-eb98-4c55-a6c4-f99bcaefd299")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1f9f1566-46fa-44c7-a790-92c5c27114cc"
 					(reference "#PWR044")
 					(unit 1)
@@ -1236,7 +1236,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "DM-OLED096-636"
+		(property "Value" "OLED096"
 			(at 134.366 50.8 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1427,7 +1427,7 @@
 			(uuid "831dd3be-6382-4230-9b7e-08f8663433c8")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1f9f1566-46fa-44c7-a790-92c5c27114cc"
 					(reference "U1")
 					(unit 1)
@@ -1534,7 +1534,7 @@
 			(uuid "1690e0fb-3a26-4336-81a6-b7b0e4b53446")
 		)
 		(instances
-			(project "meshtastic-v0"
+			(project "meshthingy"
 				(path "/e4d6fcd6-7415-4955-88fd-f0e430797514/1f9f1566-46fa-44c7-a790-92c5c27114cc"
 					(reference "JP4")
 					(unit 1)

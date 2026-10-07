@@ -18,6 +18,7 @@ _autosave-*
 /fab/
 /gerbers/
 /output/
+/datasheets/
 *.gbr
 *.gbrjob
 *.gtl
