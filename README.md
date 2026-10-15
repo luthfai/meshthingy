@@ -10,6 +10,25 @@
   <img src="docs/meshthingy-f.png" alt="meshthingy board, front view" width="820">
 </p>
 
+> [!WARNING]
+> **Rev R1 is currently in fabrication — nothing here has been tested yet.**
+> The schematic and layout are finished and pass DRC, but no board has been
+> assembled or powered up. Everything in this README (pin map, charger settings,
+> power latch behaviour, assembly notes) describes the design *as intended* and
+> may change after bring-up. Build one at your own risk.
+
+## Project status
+
+| Stage | Status |
+| --- | --- |
+| Schematic | ✅ Done |
+| PCB layout | ✅ Done — 0 DRC violations, 0 unconnected items |
+| BOM | ✅ Done — a few part variants still to pick (see [Bill of materials](#bill-of-materials)) |
+| PCB fabrication | ⏳ In progress |
+| Assembly | ⬜ Not started |
+| Bring-up and testing | ⬜ Not started |
+| Firmware | 🚧 Work in progress |
+
 ---
 
 ## What this board is for
@@ -182,7 +201,7 @@ low-leakage silicon parts — Schottkys leak enough to half-enable the buck when
 | **Dimensions** | 71.0 × 46.0 mm, cut-out under the ESP32 antenna, milled slots isolating the BME280 |
 | **Stackup** | 2 layers (F.Cu / B.Cu), 1.6 mm |
 | **Components** | 96 footprints, 353 pads (329 SMD, 22 through-hole, 2 NPTH), 378 vias |
-| **Density** | 67% front, 9% back — almost everything lives on the front |
+| **Density** | 66% front, 9% back — almost everything lives on the front |
 | **Copper** | GND pour on both layers, pour cut back under the RF connectors and antennas |
 | **Design rules** | 0.175 mm clearance, 0.2 mm minimum track, 0.6 / 0.3 mm vias |
 | **Assembly** | SMD on the front, 0805 passives; through-hole only for `J2`, the OLED header and the USB-C shell tabs |
@@ -200,7 +219,7 @@ prototype fab at standard tolerances.
     </td>
     <td width="50%" align="center">
       <img src="docs/meshthingy-b.png" alt="Back, populated" width="100%"><br>
-      <sub><b>Back</b> — labelled test points for every bus, vibration motor pads (<code>JP1</code>), repo QR code</sub>
+      <sub><b>Back</b> — labelled test points for every bus, vibration motor pads (<code>JP1</code>, silkscreen <code>VBR</code>), repo QR code</sub>
     </td>
   </tr>
 </table>
@@ -227,9 +246,15 @@ The RF section is deliberately sparse: the pours are cut back under the antenna
 connectors, the ESP32's PCB antenna hangs over a board cut-out, and the GPS
 keepout is marked on the silkscreen so nothing gets placed under it during assembly.
 
-Regenerate these plots after any layout change:
+Regenerate the 3D renders and layer plots after any layout change (the renders
+are trimmed with ImageMagick):
 
 ```bash
+kicad-cli pcb render --output /tmp/f.png --side top    --quality high --width 2000 --height 1300 meshthingy.kicad_pcb
+kicad-cli pcb render --output /tmp/b.png --side bottom --quality high --width 2000 --height 1300 meshthingy.kicad_pcb
+magick /tmp/f.png -trim +repage -bordercolor none -border 24 docs/meshthingy-f.png
+magick /tmp/b.png -trim +repage -bordercolor none -border 24 docs/meshthingy-b.png
+
 kicad-cli pcb export svg --output docs/layers-front.svg \
   --layers "F.Cu,F.SilkS,Edge.Cuts" \
   --page-size-mode 2 --exclude-drawing-sheet --check-zones --mode-single \
@@ -309,7 +334,9 @@ Test points and solder jumpers are left out — they are PCB features, not parts
 
 A print-ready A4 copy with kitting checkboxes and the open items highlighted is
 rendered from the CSV with `python bom/render_bom_pdf.py` (needs `pip install weasyprint`)
-and written to `bom/meshthingy-bom.pdf`.
+and written to `bom/meshthingy-bom.pdf`. For hand assembly, open
+[bom/ibom.html](bom/ibom.html) in a browser — an interactive BOM that highlights
+each part's position on the board.
 
 ## Building it
 
@@ -328,8 +355,8 @@ kicad-cli pcb export drill   --output fab/ meshthingy.kicad_pcb
 kicad-cli sch export bom       --output fab/bom-raw.csv meshthingy.kicad_sch
 kicad-cli pcb export pos       --output fab/pos.csv meshthingy.kicad_pcb
 
-# 3D render
-kicad-cli pcb render --output board.png meshthingy.kicad_pcb
+# Design rules check
+kicad-cli pcb drc --output fab/drc.rpt meshthingy.kicad_pcb
 ```
 
 Generated outputs are gitignored — regenerate them, or attach them to a release tag.
@@ -345,7 +372,7 @@ no paste aperture — tin it by hand, or add paste to the stencil, before reflow
 pinout. They ship **unbridged** — bridge them to match the module you source
 before expecting the display to light up. Never bridge all three pads of one jumper.
 
-`JP1` on the back is not a jumper. It's the pair of solder pads for the vibration
+`JP1` on the back (silkscreen `VBR`) is not a jumper. It's the pair of solder pads for the vibration
 motor. Solder a coin or pager-style motor's leads across it: the pad on the
 `+3V3` side takes the red lead and the pad on the `Q4` drain side takes the black
 lead. `D9` clamps the motor's flyback, so the motor runs straight off the
@@ -360,46 +387,10 @@ into the ROM bootloader, short `B` while you tap `R`.
 
 ## Firmware
 
-The board targets [Meshtastic](https://meshtastic.org) firmware on the ESP32-S3.
-A starting point for a variant (check macro names against the firmware version
-you build):
-
-```c
-#define USE_SX1262
-#define LORA_SCK   43
-#define LORA_MOSI  1
-#define LORA_MISO  2
-#define LORA_CS    6
-#define LORA_RESET 5
-#define LORA_DIO1  4
-#define LORA_BUSY  44
-#define SX126X_CS     LORA_CS
-#define SX126X_DIO1   LORA_DIO1
-#define SX126X_BUSY   LORA_BUSY
-#define SX126X_RESET  LORA_RESET
-#define SX126X_DIO2_AS_RF_SWITCH      // HT-RA62 drives its RF switch from DIO2
-#define SX126X_DIO3_TCXO_VOLTAGE 1.8  // HT-RA62 TCXO is powered from DIO3
-
-#define GPS_RX_PIN 42   // MCU RX  <- GPS TXD
-#define GPS_TX_PIN 41   // MCU TX  -> GPS RXD
-#define I2C_SDA    13
-#define I2C_SCL    14
-#define BATTERY_PIN 8
-#define ADC_MULTIPLIER 2.0
-```
-
-Notes for a variant:
-
-- **Power hold** — set `IO9` high as early as possible in boot; the board turns
-  off when the lever is released otherwise.
-- **Console on native USB** — LoRa SCK and BUSY sit on the UART0 pins (GPIO43/44),
-  so build with USB CDC on boot and keep the serial console off UART0. The ROM
-  boot log still toggles GPIO43 at reset; firmware resets the radio afterwards.
-- **TCXO voltage** — 1.8 V is what Heltec uses on its SX1262 designs; confirm
-  against the module if the radio fails to start.
-
-The ESP32-S3 GPIO matrix means bus pins are remappable in firmware if a variant
-config needs to differ.
+🚧 **Work in progress.** There is no firmware for this board yet — it will target
+[Meshtastic](https://meshtastic.org) on the ESP32-S3 once the first boards are
+back from the fab and brought up. Until then, the [pin map](#pin-map) above is
+the reference for anyone writing a variant.
 
 ## Repository notes
 
