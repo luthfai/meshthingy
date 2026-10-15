@@ -307,6 +307,10 @@ Still to pin down before ordering parts:
 
 Test points and solder jumpers are left out — they are PCB features, not parts.
 
+A print-ready A4 copy with kitting checkboxes and the open items highlighted is
+rendered from the CSV with `python bom/render_bom_pdf.py` (needs `pip install weasyprint`)
+and written to `bom/meshthingy-bom.pdf`.
+
 ## Building it
 
 Open [meshthingy.kicad_pro](meshthingy.kicad_pro) in **KiCad 10** or newer.

@@ -1,4 +1,4 @@
-Item,Qty,Reference,Value,Description,Manufacturer,MPN,Footprint,Notes
+﻿Item,Qty,Reference,Value,Description,Manufacturer,MPN,Footprint,Notes
 1,10,"C1,C7,C8,C10,C11,C19,C21,C22,C23,C24",100n,Unpolarized capacitor,,,C_0805_2012Metric,"X7R, >=16 V"
 2,5,"C2,C9,C14,C18,C20",10u,Unpolarized capacitor,,,C_0805_2012Metric,"X5R/X7R, >=10 V"
 3,2,"C3,C5",4u7,Unpolarized capacitor,,,C_0805_2012Metric,"X5R/X7R, >=10 V (C5 on battery, C3 on VSYS)"
@@ -12,7 +12,7 @@ Item,Qty,Reference,Value,Description,Manufacturer,MPN,Footprint,Notes
 11,1,J2,BATT_Con,"JST-PH 2-pin horizontal, battery",JST,S2B-PH-K-S,JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal,
 12,1,J3,Conn_Coaxial,"U.FL receptacle, GPS antenna",Hirose,U.FL-R-SMT-1,U.FL_Hirose_U.FL-R-SMT-1_Vertical,
 13,1,J4,SMA_Con,"SMA edge-mount jack, LoRa antenna",Amphenol RF,132289,SMA_Amphenol_132289_EdgeMount,
-14,1,L1,47nH,"Inductor, 0603",,,L_0603_1608Metric,GPS active-antenna bias choke
+14,1,L1,47nH,"Inductor, 0402",,,L_0402_1005Metric,GPS active-antenna bias choke
 15,1,L2,6.8uH,"Power inductor, 6x6 mm shielded",,,L_Changjiang_FNR6045S,"Buck inductor, Isat >= 1.5 A (e.g. Changjiang FNR6045S6R8MT)"
 16,1,LS1,Buzzer 8.5x8.5x3,"Magnetic buzzer/transducer, 8.5 x 8.5 mm",PUI Audio,SMT-0927-S-14-R,XDCR_SMT-0927-S-14-R,"Magnetic transducer, PWM driven - verify exact MPN"
 17,2,"Q1,Q4",SI2302,"N-channel MOSFET, SOT-23 (buzzer / motor driver)",,,SOT-23,"N-MOSFET, logic-level (Vgs(th) <= 1.5 V); e.g. Vishay SI2302CDS or equivalent"

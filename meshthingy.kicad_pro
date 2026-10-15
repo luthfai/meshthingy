@@ -110,11 +110,19 @@
           ""
         ],
         [
-          "clearance|122975000|74832759|88ea12f6-2947-4b00-a40a-38d0839827bb|c46a2338-f430-4a39-a3a0-4e431a834686",
+          "clearance|122975000|74900000|88ea12f6-2947-4b00-a40a-38d0839827bb|c46a2338-f430-4a39-a3a0-4e431a834686",
           ""
         ],
         [
           "clearance|124150000|72763793|7fb72f55-16a5-4093-b032-5b9f9c0cd2bc|c46a2338-f430-4a39-a3a0-4e431a834686",
+          ""
+        ],
+        [
+          "mirrored_text_on_front_layer|149625000|68100000|329f08be-e6dc-42ac-9358-efc696717675|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "mirrored_text_on_front_layer|153075000|68050000|6253965c-cd3a-493e-8d54-dda17eb46641|00000000-0000-0000-0000-000000000000",
           ""
         ]
       ],
@@ -846,7 +854,7 @@
         "uuid": "e4d6fcd6-7415-4955-88fd-f0e430797514"
       }
     ],
-    "used_designators": "J1-5,MOSI1,SDA1,D1-9,U1-11,C1-25,G1-2,LS1-2,RST1,#PWR1-68,JP1-4,TP12-23,TP26,VS1,CLK1,AE1,SW1-4,MISO1,IC1,E1,L1-2,BOOT1,R1-24,SLC1,CSN1,BZ1,Q1-4",
+    "used_designators": "VS1,TP12-23,TP26,JP1-4,RST1,LS1-2,G1-2,#PWR1-68,U1-11,D1-9,SDA1,C1-25,MOSI1,J1-5,Q1-4,BZ1,CSN1,SLC1,R1-24,BOOT1,L1-2,E1,IC1,MISO1,SW1-4,AE1,CLK1",
     "variants": []
   },
   "sheets": [
